@@ -1,0 +1,26 @@
+// ========== Automatically Convert Pixels ==> Rems
+@function rem($size) {
+    $remSize: $size / 16;
+    @return #{$remSize}rem;
+}
+
+// ========== Font Family 
+$font-main: 'Be Vietnam', sans-serif;
+
+// ========== Font Weights
+$weight-regular: 400;
+$weight-medium: 500;
+$weight-bold: 700;
+
+// ========== Primary Colors
+$color-pry-100: hsl(12, 88%, 59%);
+$color-pry-200: hsl(228, 39%, 23%);
+
+
+// ========== Neutral Colors
+$color-neu-100: hsl(227, 12%, 61%);
+$color-neu-200: hsl(233, 12%, 13%);
+$color-neu-300: hsl(13, 100%, 96%);
+$color-neu-400: hsl(0, 0%, 98%);
+
+$color-btn-hover:hsl(12, 97%, 69%);

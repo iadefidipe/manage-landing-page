@@ -1,0 +1,143 @@
+@function rem($size) {
+    $remSize: $size / 16;
+    @return #{$remSize}rem;
+}
+
+.Header-Hero{
+
+    background-image: url(../../images/bg-simplify-section-desktop.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+
+.header{
+    padding: rem(56) rem(165);
+
+    &__logo{
+        img{
+            max-width: rem(147);
+            height: rem(24) ;
+
+            @include breakpoint-down(small){
+                max-width: rem(110);
+                height: rem(18) ;
+            }
+        }
+    }
+
+
+    &__menu{
+        //hamburger styling
+        > span{
+            display: block;
+            width:25px;
+            height: 4px;
+            background: $color-neu-200;
+            transition: all 300ms ease-in-out;
+            transform-origin: 3px 1px;
+
+            &:not(:last-child){
+                margin-bottom: 3px;
+            }
+
+        }
+
+        
+    }
+
+    &__links{
+        max-width: rem(398);
+        gap: rem(25);
+        a{
+            color: $color-neu-200;
+            font-weight: $weight-medium;
+            font-size: rem(13);
+
+            &:hover{
+                color: $color-neu-100;
+            }
+        }
+    }
+
+    .button{
+        &:hover{
+            background: $color-btn-hover;
+        }
+    }
+
+    
+
+    
+    @include breakpoint-down(medium){
+        padding: rem(41)  rem(24);
+    }
+}
+
+// ====== Hero styling
+
+.hero{
+    margin-top: rem(120);
+    padding: 0 rem(165);
+    
+
+    &__left{
+        flex-direction: column;
+        flex: 1;
+        gap: rem(50);
+
+        p{
+            margin-top: rem(16);
+            font-size: rem(16);
+            line-height: 26px;
+            color: $color-neu-100;
+            line-height: rem(24);
+            width: rem(350);
+        }
+    }
+
+    &__right{
+        flex: 1;
+        max-width: rem(540);
+        height: rem(485) ;
+    }
+
+    &__cta{
+        margin-top: rem(40);
+    }
+
+
+    @include breakpoint-down(medium){
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-top: rem(52);
+        padding: 0 rem(29);
+        
+
+        &__left{
+            margin-top: rem(19);
+            padding: 0 rem(26);
+            gap: rem(20);
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            p{
+                margin-top: rem(9);
+                width: 100%;
+                line-height: 28px;
+                text-align: center;
+            }
+
+        }
+
+        &__right{
+            max-width: rem(318);
+            height: rem(286);
+        }
+
+        &__cta{
+            margin-top: rem(29);
+        }
+    }
+}
+
