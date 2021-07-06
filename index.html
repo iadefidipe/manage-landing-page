@@ -10,6 +10,10 @@
   <!-- css stylesheets -->
   <link rel="stylesheet" href="./app/scss/style.css">
 
+  <!-- Swiper js style -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
   <!-- search engine optimization -->
   <title>Frontend Mentor | Manage landing page</title>
   <meta name="description"
@@ -30,6 +34,9 @@
   <!-- font dns from google fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+  
+
 
 
 </head>
@@ -76,49 +83,94 @@
 
   <div class="featuure-testimonial">
 
-    <section class="features">
+    <section class="features flex flex-jc-sb">
       
-      <div class="features__left">
+      <div class="features__left flex flex-ai-c">
+
         <h2>What’s different about Manage?</h2>
         <p>
           Manage provides all the functionality your team needs, without
           the complexity. Our software is tailor-made for modern digital
           product teams.
         </p>
-      </div>
-  <div class="features__right">
 
-    <div class="featuures-feature">
-      <h4>01</h4>
-      <h3>Track company-wide progress</h3>
-      <p>
-        See how your day-to-day tasks fit into the wider vision. Go from
-        tracking progress at the milestone level all the way done to the
-        smallest of details. Never lose sight of the bigger picture again.
-      </p>
-    </div>
-    <div class="featuures-feature">
-      <h4>02</h4>
-      <h3>Advanced built-in reports</h3>
-      <p>
-        Set internal delivery estimates and track progress toward company
-        goals. Our customisable dashboard helps you build out the reports
-        you need to keep key stakeholders informed.
-      </p>
-    </div>
-    <div class="featuures-feature">
-      <h4>03</h4>
-      <h3>Everything you need in one place</h3>
-      <p>
-        Stop jumping from one service to another to communicate, store files,
-        track tasks and share documents. Manage offers an all-in-one team
-        productivity solution.
-      </p>
-    </div>
-  </div>
+      </div>
+
+      
+      <div class="features__right">
+
+        <div class=" feature">
+
+          <div class="feature-header flex flex-ai-c">
+
+            <div class="feature-no">
+              <h4>01</h4>
+            </div>
+            <h3>Track company-wide progress</h3>
+
+          </div>
+
+          <div class="feature-text">
+            
+            <p>
+              See how your day-to-day tasks fit into the wider vision. Go from
+              tracking progress at the milestone level all the way done to the
+              smallest of details. Never lose sight of the bigger picture again.
+            </p>
+          </div>
+
+        </div>
+
+        <div class=" feature">
+
+          <div class="feature-header flex flex-ai-c">
+            <div class="feature-no">
+              <h4>02</h4>
+            </div>
+            <h3>Advanced built-in reports</h3>
+          </div>
+
+          <div class="feature-text">
+            
+            <p>
+              Set internal delivery estimates and track progress toward company
+              goals. Our customisable dashboard helps you build out the reports
+              you need to keep key stakeholders informed.
+            </p>
+          </div>
+
+        </div>
+
+        <div class=" feature ">
+
+          <div class="feature-header flex flex-ai-c">
+            <div class="feature-no">
+              <h4>03</h4>
+            </div>
+            <h3>Everything you need in one place</h3>
+          </div>
+
+          <div class="feature-text">
+            <p>
+              Stop jumping from one service to another to communicate, store files,
+              track tasks and share documents. Manage offers an all-in-one team
+              productivity solution.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
     </section>
-    
+
+
   </div>
+
+  <section class="cta">
+      <h2>Simplify how your team works today.</h2>
+      <div class="cta__button"><a href="#" class="button header__cta"> Get Started</a></div>
+    </section>
 
   <!-- 
 
@@ -156,4 +208,7 @@
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </html>

@@ -1,16 +1,13 @@
-@function rem($size) {
-    $remSize: $size / 16;
-    @return #{$remSize}rem;
-}
+
 
 .Header-Hero{
 
-    background-image: url(../../images/bg-simplify-section-desktop.svg);
+    // background-image: url(../../images/illustration-intro.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     
 }
-
+// ************ header styling
 .header{
     padding: rem(56) rem(165);
 
@@ -60,13 +57,6 @@
         }
     }
 
-    .button{
-        &:hover{
-            background: $color-btn-hover;
-        }
-    }
-
-    
 
     
     @include breakpoint-down(medium){
@@ -74,7 +64,7 @@
     }
 }
 
-// ====== Hero styling
+//********* ====== Hero styling
 
 .hero{
     margin-top: rem(120);
@@ -88,10 +78,6 @@
 
         p{
             margin-top: rem(16);
-            font-size: rem(16);
-            line-height: 26px;
-            color: $color-neu-100;
-            line-height: rem(24);
             width: rem(350);
         }
     }
@@ -124,7 +110,7 @@
             p{
                 margin-top: rem(9);
                 width: 100%;
-                line-height: 28px;
+                font-size: rem(16);
                 text-align: center;
             }
 

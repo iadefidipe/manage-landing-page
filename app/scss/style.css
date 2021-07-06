@@ -69,9 +69,12 @@ a {
   font-size: 1rem;
 }
 
-h1 {
+h1, h2, h3 {
   font-weight: 700;
   color: #242d52;
+}
+
+h1 {
   font-size: 3.5rem;
   line-height: 64px;
   letter-spacing: -1px;
@@ -82,6 +85,45 @@ h1 {
     font-size: 2.5rem;
     line-height: 50px;
     text-align: center;
+  }
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 44px;
+  letter-spacing: -0.71px;
+}
+
+@media (max-width: 1023px) {
+  h2 {
+    font-size: 1.875rem;
+    line-height: 45px;
+    letter-spacing: -0.62px;
+  }
+}
+
+h3 {
+  font-size: 1rem;
+  letter-spacing: -0.29px;
+}
+
+h4 {
+  color: #fafafa;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 26px;
+  color: #9095a7;
+  line-height: 1.5rem;
+}
+
+@media (max-width: 639px) {
+  p {
+    line-height: 28px;
+    font-size: 0.875rem;
   }
 }
 
@@ -134,8 +176,11 @@ button, .button {
   font-size: 0.875rem;
 }
 
+button:hover, .button:hover {
+  background: #fd8263;
+}
+
 .Header-Hero {
-  background-image: url(../../images/bg-simplify-section-desktop.svg);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -186,10 +231,6 @@ button, .button {
   color: #9095a7;
 }
 
-.header .button:hover {
-  background: #fd8263;
-}
-
 @media (max-width: 1023px) {
   .header {
     padding: 2.5625rem 1.5rem;
@@ -214,10 +255,6 @@ button, .button {
 
 .hero__left p {
   margin-top: 1rem;
-  font-size: 1rem;
-  line-height: 26px;
-  color: #9095a7;
-  line-height: 1.5rem;
   width: 21.875rem;
 }
 
@@ -258,7 +295,7 @@ button, .button {
   .hero__left p {
     margin-top: 0.5625rem;
     width: 100%;
-    line-height: 28px;
+    font-size: 1rem;
     text-align: center;
   }
   .hero__right {
@@ -268,5 +305,155 @@ button, .button {
   .hero__cta {
     margin-top: 1.8125rem;
   }
+}
+
+.features {
+  margin-top: 6.25rem;
+  padding: 0 10.3125rem;
+  gap: 7.8125rem;
+}
+
+@media (max-width: 1023px) {
+  .features {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.features__left {
+  max-width: 27.8125rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 1023px) {
+  .features__left {
+    min-width: 100%;
+    padding: 0 1.375rem;
+  }
+}
+
+.features__left p {
+  width: 21.875rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 1023px) {
+  .features__left p {
+    width: 100%;
+  }
+}
+
+.features__right {
+  max-width: 33.75rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.5rem;
+}
+
+@media (max-width: 1023px) {
+  .features__right {
+    min-width: 100%;
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .features__right .feature {
+    margin-top: 3.375rem;
+  }
+}
+
+.features__right .feature:not(:first-of-type) {
+  margin-top: 2.5rem;
+}
+
+.features__right .feature-header {
+  gap: 1.75rem;
+}
+
+@media (max-width: 1023px) {
+  .features__right .feature-header {
+    background-color: #FFF0EC;
+    border-radius: 2.4375rem 0 0 2.4375rem;
+  }
+}
+
+.features__right .feature-no {
+  background: #f25f3a;
+  padding: 0.375rem 1.4375rem 0.625rem 1.5625rem;
+  border-radius: 2.4375rem;
+}
+
+.features__right .feature-text {
+  margin-top: 0.5625rem;
+}
+
+.features__right .feature-text p {
+  text-align: left;
+  padding-left: 5.9375rem;
+}
+
+.cta {
+  background-color: #f25f3a;
+  min-height: 13.75rem;
+  padding: 3.875rem 10.1875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1023px) {
+  .cta {
+    padding: 5.6875rem 1.9375rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1.8125rem;
+  }
+}
+
+.cta h2 {
+  max-width: 27.8125rem;
+  color: #fafafa;
+}
+
+@media (max-width: 1023px) {
+  .cta h2 {
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+.cta .button {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: pointer;
+  background: #fafafa;
+  color: #f25f3a;
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+.cta .button:hover {
+  color: #fd8263;
 }
 /*# sourceMappingURL=style.css.map */

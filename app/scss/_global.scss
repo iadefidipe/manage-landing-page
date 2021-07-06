@@ -74,9 +74,12 @@ a{
 
 }
 
-h1{
+h1,h2, h3{
   font-weight: $weight-bold;
   color:$color-pry-200;
+}
+
+h1{
   font-size: rem(56);
   line-height: 64px;
   letter-spacing: -1px;
@@ -86,6 +89,42 @@ h1{
     text-align: center;
   }
   
+}
+
+h2{
+  font-size: rem(40);
+  line-height: 44px;
+  letter-spacing: -0.71px;
+
+  @include breakpoint-down(medium){
+    font-size: rem(30);
+    line-height: 45px;
+    letter-spacing: -0.62px;
+  }
+}
+
+h3{
+  font-size: rem(16);
+  letter-spacing: -0.29px;
+}
+
+h4{
+  color: $color-neu-400;
+  font-weight: $weight-bold;
+  font-size: rem(16);
+}
+
+p{
+  font-size: rem(16);
+  line-height: 26px;
+  color: $color-neu-100;
+  line-height: rem(24);
+
+  @include breakpoint-down(small){
+    line-height: 28px;
+    font-size: rem(14);
+  }
+
 }
 
 
@@ -135,4 +174,9 @@ button,.button{
   color: $color-neu-400;
   font-weight: 500;
   font-size: rem(14);
+
+  &:hover{
+            background: $color-btn-hover;
+        }
+  
 }
