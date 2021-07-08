@@ -456,4 +456,105 @@ button:hover, .button:hover {
 .cta .button:hover {
   color: #fd8263;
 }
+
+.footer {
+  padding: 3.875rem 10.5rem;
+  background-color: #1d1e25;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 1023px) {
+  .footer {
+    padding: 2.5rem 1.5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 3.375rem;
+  }
+}
+
+.footer__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__section p {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6.25rem;
+}
+
+.footer__links-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.8125rem;
+}
+
+.footer__links-link a {
+  color: #fafafa;
+  font-size: 0.9375rem;
+}
+
+.footer__links-link a:hover {
+  color: #f25f3a;
+}
+
+.footer__socials i {
+  font-size: 1.25rem;
+  color: #fafafa;
+}
+
+.footer__socials i:not(:first-of-type) {
+  margin-left: 0.8125rem;
+}
+
+.footer__socials i:hover {
+  color: #f25f3a;
+}
+
+.footer__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.footer__contact input {
+  border-radius: 1.375rem;
+  border: none;
+  padding: 0.6875rem 4.4375rem 0.875rem 1rem;
+}
+
+.footer__contact-cta {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 /*# sourceMappingURL=style.css.map */
