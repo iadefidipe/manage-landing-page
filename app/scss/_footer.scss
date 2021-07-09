@@ -6,8 +6,9 @@
 .footer{
     padding: rem(62) rem(168);
     background-color:$color-neu-200 ;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
 
     @include breakpoint-down(medium){
         padding: rem(40) rem(24);
@@ -28,6 +29,8 @@
     }
 
     &__links{
+        grid-column: 2/3;
+        grid-row: 1/3;
         display: flex;
         gap: rem(100);
 
@@ -47,6 +50,10 @@
     }
 
     &__socials{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        place-self:end start;
+
         i{
             font-size: rem(20);
             color: $color-neu-400;
@@ -64,15 +71,25 @@
     &__contact{
         display: flex;
         gap: rem(8);
+        place-self: start end;
         input{
+            width: rem(200);
+            height: rem(44);
             border-radius: rem(22);
             border: none;
             padding: rem(11) rem(71) rem(14) rem(16);
         }
 
         &-cta{
+            width: rem(64);
+            height: rem(44);
             box-shadow: none;
+            padding: 
         }
+    }
+
+    &>p{
+        place-self: end;
     }
 
 
