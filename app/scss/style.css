@@ -406,7 +406,9 @@ button:hover, .button:hover {
 }
 
 .cta {
-  background-color: #f25f3a;
+  background: url(../../images/bg-simplify-section-desktop.svg), #f25f3a;
+  background-repeat: no-repeat;
+  background-position: 11.25rem -8.125rem, center;
   min-height: 13.75rem;
   padding: 3.875rem 10.1875rem;
   display: -webkit-box;
@@ -422,6 +424,8 @@ button:hover, .button:hover {
 
 @media (max-width: 1023px) {
   .cta {
+    background: url(../../images/bg-simplify-section-mobile.svg), #f25f3a;
+    background-repeat: no-repeat;
     padding: 5.6875rem 1.9375rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
