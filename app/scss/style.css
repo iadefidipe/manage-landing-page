@@ -330,7 +330,8 @@ button:hover, .button:hover {
 .feature-testimonial {
   background: url(../../images/bg-tablet-pattern.svg);
   background-repeat: no-repeat;
-  background-position: -25rem 18.75rem;
+  background-size: 100%;
+  background-position: -62.5rem 15.625rem;
 }
 
 @media (max-width: 1023px) {
@@ -457,13 +458,16 @@ button:hover, .button:hover {
   width: 100%;
   min-height: 25rem !important;
   position: relative !important;
+  background: none !important;
 }
 
 .testimonial .swiper-wrapper {
   position: relative !important;
+  background: none !important;
 }
 
 .testimonial .swiper-slide {
+  background: none !important;
   position: relative !important;
   text-align: center;
   font-size: 18px;
@@ -478,6 +482,10 @@ button:hover, .button:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.testimonial .swiper-pagination-bullet-active {
+  background-color: #fd8263;
 }
 
 .testimonial .slide {
@@ -499,9 +507,15 @@ button:hover, .button:hover {
   position: relative !important;
   z-index: 10000;
   height: 100%;
-  width: 80%;
+  width: 50%;
   text-align: center;
   gap: 1.25rem;
+}
+
+@media (max-width: 1023px) {
+  .testimonial .slide {
+    width: 80%;
+  }
 }
 
 .testimonial .slide__img {

@@ -7,7 +7,8 @@
 .feature-testimonial{
     background: url(../../images/bg-tablet-pattern.svg);
     background-repeat: no-repeat;
-    background-position: rem(-400) rem(300);
+    background-size: 100%;
+    background-position: rem(-1000) rem(250);
 
     @include breakpoint-down(medium){
         background: none;
@@ -114,14 +115,19 @@
       width: 100%;
       min-height: rem(400) !important;
       position: relative !important;
+      background: none !important;
 
     }
 
     .swiper-wrapper{
         position: relative !important;
+        background: none !important;
+
     }
 
     .swiper-slide {
+      background: none !important;
+
         position: relative !important;
       text-align: center;
       font-size: 18px;
@@ -142,17 +148,12 @@
       align-items: center;
     }
 
-    // .swiper-container {
+    .swiper-pagination-bullet-active{
+        background-color: $color-btn-hover;
+    }
 
-    //     // width: 600px;
-    //     // height: 300px;
-    //     background-color: #BADA;
-
-    //     // display: flex;
-    //     // flex-direction: column;
-    //     // position: relative;
-
-    // }
+  
+   
 
     .slide{
         // height: 80%;
@@ -165,9 +166,13 @@
         position: relative !important;
         z-index: 10000;
         height: 100%;
-        width: 80%;
+        width: 50%;
         text-align: center;
         gap: rem(20);
+        
+        @include breakpoint-down (medium){
+            width: 80%;
+        }
 
         &__img{
             // position: relative !important;
