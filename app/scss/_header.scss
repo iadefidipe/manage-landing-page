@@ -1,4 +1,5 @@
 
+//* Header hero background to contain backgrounds
 
 .Header-Hero{
 
@@ -18,6 +19,7 @@
 
     
 }
+
 // ************ header styling
 .header{
     padding: rem(56) rem(165);
@@ -34,16 +36,16 @@
         }
     }
 
-
+    //* hamburger styling
     &__menu{
-        //hamburger styling
+        
         > span{
             display: block;
             width:25px;
             height: 4px;
             background: $color-neu-200;
             transition: all 300ms ease-in-out;
-            transform-origin: 3px 1px;
+            transform-origin: 3px 2px;
 
             &:not(:last-child){
                 margin-bottom: 3px;
@@ -54,9 +56,15 @@
         
     }
 
+    //* nav links
     &__links{
+
+        display: flex;
+
         max-width: rem(398);
         gap: rem(25);
+
+        
         a{
             color: $color-neu-200;
             font-weight: $weight-medium;
@@ -66,6 +74,72 @@
                 color: $color-neu-100;
             }
         }
+
+        @include breakpoint-down(medium){
+            display: none;
+            
+        }
+
+    }
+
+    //* hamburger animation class
+    .hamburger{
+            >span:first-child{
+                transform: rotate(45deg);
+
+            }
+
+            >span:nth-child(2){
+                opacity: 0;
+
+            }
+
+            >span:last-child{
+                transform: rotate(-45deg);
+
+            }
+    }
+
+    //* mobile overlay for dropdown
+
+    .overlay{
+        opacity:1;
+        position: absolute;
+        background-image: linear-gradient(  $color-pry-200, transparent);
+        top: rem(80);
+        left: 0;
+        right: 0;
+        bottom:0;
+
+    }
+
+    //*  drop style  
+
+    .drop-down{
+
+    @include breakpoint-down (medium){
+        border-radius: rem(5);
+            display: flex;
+        position: absolute;
+            margin: 0 auto ;
+            padding: rem(40) rem(119);
+            top: rem(100);
+            left: rem(24);
+            right: rem(24);
+            background: white;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+
+            a{
+                font-size: rem(16);
+                font-weight: $weight-bold;
+                color: $color-pry-200 ;
+            }
+        }
+        
+        
     }
 
 
@@ -136,5 +210,7 @@
             margin-top: rem(29);
         }
     }
+
+    
 }
 

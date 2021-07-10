@@ -229,8 +229,8 @@ button:hover, .button:hover {
   background: #1d1e25;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
-  -webkit-transform-origin: 3px 1px;
-          transform-origin: 3px 1px;
+  -webkit-transform-origin: 3px 2px;
+          transform-origin: 3px 2px;
 }
 
 .header__menu > span:not(:last-child) {
@@ -238,6 +238,9 @@ button:hover, .button:hover {
 }
 
 .header__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 24.875rem;
   gap: 1.5625rem;
 }
@@ -250,6 +253,68 @@ button:hover, .button:hover {
 
 .header__links a:hover {
   color: #9095a7;
+}
+
+@media (max-width: 1023px) {
+  .header__links {
+    display: none;
+  }
+}
+
+.header .hamburger > span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header .hamburger > span:nth-child(2) {
+  opacity: 0;
+}
+
+.header .hamburger > span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.header .overlay {
+  opacity: 1;
+  position: absolute;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#242d52), to(transparent));
+  background-image: linear-gradient(#242d52, transparent);
+  top: 5rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media (max-width: 1023px) {
+  .header .drop-down {
+    border-radius: 0.3125rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    margin: 0 auto;
+    padding: 2.5rem 7.4375rem;
+    top: 6.25rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    background: white;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .drop-down a {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #242d52;
+  }
 }
 
 @media (max-width: 1023px) {
