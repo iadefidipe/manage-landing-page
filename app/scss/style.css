@@ -450,11 +450,34 @@ button:hover, .button:hover {
       -ms-flex-align: center;
           align-items: center;
   gap: 3.875rem;
-  position: relative;
+  position: relative !important;
 }
 
 .testimonial .swiper-container {
-  background-color: #BADA;
+  width: 100%;
+  min-height: 25rem !important;
+  position: relative !important;
+}
+
+.testimonial .swiper-wrapper {
+  position: relative !important;
+}
+
+.testimonial .swiper-slide {
+  position: relative !important;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .testimonial .slide {
@@ -473,21 +496,25 @@ button:hover, .button:hover {
       -ms-flex-align: center;
           align-items: center;
   background: #FAFAFA;
-  position: relative;
-  height: 15.625rem;
+  position: relative !important;
+  z-index: 10000;
+  height: 100%;
   width: 80%;
   text-align: center;
   gap: 1.25rem;
 }
 
-.testimonial .slide img {
-  position: relative;
+.testimonial .slide__img {
   top: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+  z-index: 100000000000000000000000000000000 !important;
+}
+
+.testimonial .slide__img img {
   width: 4.5rem;
   height: 4.5rem;
-  z-index: 1000000 !important;
+  z-index: 100000000000000000000000000000000 !important;
 }
 
 .testimonial p {

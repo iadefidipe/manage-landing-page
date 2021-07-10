@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="./app/scss/style.css">
 
   <!-- Swiper js style -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" /> -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
   
@@ -39,8 +39,8 @@
 
   <!-- ***==== font awesome cdn -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-
-  <script defer src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<!-- 
+  <script defer src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
   <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script defer src="./app/js/main.js"></script>
 
@@ -51,7 +51,7 @@
 
 <!-- *** header and hero container -->
   <main>
-    
+
     <div class="Header-Hero">
       <header class="header">
         <nav class="flex flex-jc-sb flex-ai-c">
@@ -144,6 +144,33 @@
       </section>
       <section class="testimonial">
         <h2>What they’ve said</h2>
+
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><div class="slide">
+                <div class="slide__img"><img src="./images/avatar-richard.png" alt=""></div>
+                <h3>Richard Watts</h3>
+                <p>“Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!”</p>
+              </div> </div>
+            <div class="swiper-slide"><div class="slide">
+                <div class="slide__img"><img src="./images/avatar-shanai.png" alt=""></div>
+                <h3>Shanai Gough</h3>
+                <p> “Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+              </div> </div>
+            <div class="swiper-slide"><div class="slide">
+                <div class="slide__img"><img src="./images/avatar-anisha.png" alt=""></div>
+                <h3>Anisha Li</h3>
+                <p>“Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
+              </div> </div>
+            
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Arrows -->
+          <!-- <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> -->
+        </div>
     
           <a href="#" class="button "> Get Started</a>
       </section>
@@ -217,6 +244,4 @@
   
 </body>
 
-<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </html>

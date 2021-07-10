@@ -106,42 +106,88 @@
     // justify-content: center;
     align-items: center;
     gap: rem(62);
-    position: relative;
+    position: relative !important;
+
+
 
     .swiper-container {
-        // width: 600px;
-        // height: 300px;
-        background-color: #BADA;
-
-        // display: flex;
-        // flex-direction: column;
-        // position: relative;
+      width: 100%;
+      min-height: rem(400) !important;
+      position: relative !important;
 
     }
 
+    .swiper-wrapper{
+        position: relative !important;
+    }
+
+    .swiper-slide {
+        position: relative !important;
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    // .swiper-container {
+
+    //     // width: 600px;
+    //     // height: 300px;
+    //     background-color: #BADA;
+
+    //     // display: flex;
+    //     // flex-direction: column;
+    //     // position: relative;
+
+    // }
+
     .slide{
+        // height: 80%;
         margin:  0 auto;
         display:flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         background: #FAFAFA;
-        position: relative;
-        // z-index: -1;
-        height: rem(250);
+        position: relative !important;
+        z-index: 10000;
+        height: 100%;
         width: 80%;
         text-align: center;
         gap: rem(20);
 
-        img{
-            position: relative;
+        &__img{
+            // position: relative !important;
             top: 0;
-            transform: translateY(-50%);
-            width: rem(72);
-            height: rem(72);
-            z-index: 1000000 !important;
+            transform: translateY(10%);
+            z-index: 100000000000000000000000000000000 !important;
+
+            img{
+                
+                width: rem(72);
+                height: rem(72);
+                z-index: 100000000000000000000000000000000 !important;
+
+                
+            }
         }
+
     }
+
+        
 
     p{
         padding: 0 rem(21);
