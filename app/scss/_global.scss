@@ -62,9 +62,22 @@ select {
 
 // ========== Set core body defaults 
 body {
+  position: relative;
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     font-family: $font-main;
+  }
+
+  main{
+    @include breakpoint-down(small){
+        background-image: url(../../images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 100%; // rem(400) rem(500);
+        background-position:  rem(200) rem(500);
+        
+
+
+    }
   }
 
 a{
@@ -169,14 +182,17 @@ button,.button{
   border-radius: rem(22);
   box-shadow: 0 15px 15px -10px #FF9F8E;
   cursor: pointer;
-  background: $color-pry-100;
+  background-color: $color-pry-100;
   border: 0;
   color: $color-neu-400;
   font-weight: 500;
   font-size: rem(14);
+  // transition: all 1s ease-in-out;
 
   &:hover{
-            background: $color-btn-hover;
+            background-color: $color-btn-hover;
+            transition: all 1s ease-in-out;
+
         }
   
 }

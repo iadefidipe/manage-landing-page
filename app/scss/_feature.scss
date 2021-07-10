@@ -4,6 +4,16 @@
 }
 
 
+.feature-testimonial{
+    background: url(../../images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: rem(-400) rem(300);
+
+    @include breakpoint-down(medium){
+        background: none;
+    }
+}
+
 // *********** feautes section styling
 .features{
     margin-top: rem(100);
@@ -86,5 +96,54 @@
                 }
             }
         }
+    }
+}
+
+.testimonial{
+    margin: 100px auto;
+    display: flex;
+    flex-direction:column ;
+    // justify-content: center;
+    align-items: center;
+    gap: rem(62);
+    position: relative;
+
+    .swiper-container {
+        // width: 600px;
+        // height: 300px;
+        background-color: #BADA;
+
+        // display: flex;
+        // flex-direction: column;
+        // position: relative;
+
+    }
+
+    .slide{
+        margin:  0 auto;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #FAFAFA;
+        position: relative;
+        // z-index: -1;
+        height: rem(250);
+        width: 80%;
+        text-align: center;
+        gap: rem(20);
+
+        img{
+            position: relative;
+            top: 0;
+            transform: translateY(-50%);
+            width: rem(72);
+            height: rem(72);
+            z-index: 1000000 !important;
+        }
+    }
+
+    p{
+        padding: 0 rem(21);
     }
 }

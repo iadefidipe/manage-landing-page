@@ -2,9 +2,20 @@
 
 .Header-Hero{
 
-    // background-image: url(../../images/illustration-intro.svg);
-    background-size: 100%;
+    background-image: url(../../images/bg-tablet-pattern.svg);
+    // background-size: 100%;
     background-repeat: no-repeat;
+    background-position: rem(700) rem(-150);
+
+    @include breakpoint-down(medium){
+        background-image: url(../../images/bg-mobile.svg);
+        background-size: 100%;
+        background-position: left top;
+        
+
+
+    }
+
     
 }
 // ************ header styling
@@ -97,12 +108,12 @@
         flex-direction: column-reverse;
         text-align: center;
         margin-top: rem(52);
-        padding: 0 rem(29);
+        padding: 0 rem(26);
         
 
         &__left{
             margin-top: rem(19);
-            padding: 0 rem(26);
+            
             gap: rem(20);
             width: 100%;
             justify-content: center;
