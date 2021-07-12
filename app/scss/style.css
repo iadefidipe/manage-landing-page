@@ -766,10 +766,10 @@ button:hover, .button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 0.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   place-self: start end;
 }
 
@@ -784,31 +784,31 @@ button:hover, .button:hover {
   }
 }
 
-.footer__contact input {
+.footer__contact-email {
   width: 12.5rem;
   height: 2.75rem;
   border-radius: 1.375rem;
   border: none;
-  padding-left: 1rem;
+  padding: 0 1rem;
   font-size: 0.8125rem;
+  background-color: #f2ffef;
 }
 
-.footer__contact input:focus {
-  outline: 1px solid #f25f3a;
+.footer__contact-email:focus {
+  border: 1px solid #f25f3a;
+  outline: none;
 }
 
 @media (max-width: 1023px) {
-  .footer__contact input {
+  .footer__contact-email {
     width: 14.9375rem;
   }
 }
 
 .footer__contact-cta {
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  width: 4rem;
-  height: 2.75rem;
+  display: none;
+  padding: 0.8125rem 1.5rem !important;
+  border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
   color: #fafafa;
@@ -825,10 +825,23 @@ button:hover, .button:hover {
   transition: background 500ms ease-in-out;
 }
 
-@media (max-width: 1023px) {
-  .footer__contact-cta {
-    width: 5rem;
-  }
+.footer__contact .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.footer__contact .error-alert {
+  margin-top: 0.25rem;
+  display: none;
+}
+
+.footer__contact .error-alert p {
+  font-size: 0.625rem;
+  font-style: italic;
+  font-weight: 400;
+  color: #f25f3a;
 }
 
 .footer > p {

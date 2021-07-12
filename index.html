@@ -223,9 +223,22 @@
 
   
    <div class="footer__contact">
-      <input type="email" name="email" id="email" placeholder="Updates in your inbox…">
-    
-      <a href="#"  class="  footer__contact-cta">Go</a>
+     
+        <form action="#" class="main footer__contact-form">
+
+          <input onkeyup="check()" type="email" class="footer__contact-email" name="email" id="email" placeholder="Updates in your inbox…">
+
+          <input type="button" value="Go" class="footer__contact-cta">
+
+
+        </form>
+        
+     
+
+      <span class="error-alert">
+        <p>Please insert a valid address</p>
+      </span>
+
     </div>
     <p>Copyright 2020. All Rights Reserved </p>
   </footer>
