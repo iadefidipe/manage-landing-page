@@ -12,7 +12,7 @@ const emailBtn = document.querySelector(".footer__contact-cta");
 const form = document.querySelector(".footer__contact-form");
 
 
-// * email validation
+// * email validation funtionality
 
 let regExp = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
@@ -37,7 +37,6 @@ function check(){
     emailBtn.style.display = 'none'
   }
 }
-
 
 
 
